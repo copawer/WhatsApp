@@ -31,7 +31,7 @@ function initChatList() {
 	var elListaChats = document.getElementById("lista-chats");
 
 	for (var i in dataListaChats) {
-		var htmlChatItem = '<li><div class="avatar">' +
+		var htmlChatItem = '<li draggable="true" ondragstart="inicioDrag(event)"><div class="avatar">' +
 			'<img src="' + dataListaChats[i].imagenURL +  '" alt="" class="wh-44">' +
 			'<h4 class="w-contact-name">' + dataListaChats[i].nombre + '</h4>' +
 			'<p class="w-last-message" id="mensaje">' + dataListaChats[i].ultimoMensaje + '</p>' +
